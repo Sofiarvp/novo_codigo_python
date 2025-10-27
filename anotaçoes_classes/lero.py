@@ -1,8 +1,8 @@
 #PROGRAMAÇAO ORIENTADA A OBJETOS (POO)
 
 # classes sao estruturas de dados q possuem atributos e metodos (representaçao computacional)----- OBJETOS
-#atributo é caracteristicas gerais do objeto trabalhado em questao q sao especificados posteriormente ----- VARIAVEIS
-#metodo é as funçoes q ele vai executar/já executa ----- FUNÇOES
+#atributo sao caracteristicas gerais do objeto trabalhado em questao q sao especificados posteriormente ----- VARIAVEIS
+#metodo sao as funçoes q ele vai executar/já executa ----- FUNÇOES
 #classes podem ser iguais mas com variaveis e metodos diferentes
 #classe tem q ta com primeira letra maiuscula (ex.:Carro)
 #instancias
@@ -102,13 +102,14 @@ ferrari=Carro('usado', 'vermelho')
 
 print ((type(fusca)),fusca.cor)
 print((type(ferrari)),ferrari.cor)
-
+                                                                                                  
 
 
 
 
 
     
+
 
 
 
