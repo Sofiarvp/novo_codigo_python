@@ -60,18 +60,16 @@ print (ferrari.estado)
 print(type(fusca)) diz se é string, int..
 print(type(ferrari))
 -----------------------------------  QUESTOES PARA PRATICAR
-#########1
-
-class Pessoa:
+'''
+########1
+class Pessoa:             #classe
     def __init__(self, nome):
         self.nome=nome
         
 p1=Pessoa('Ana') #o self q é o p1 da classe pessoa atribui o nome dos parentesis para si
-p2=Pessoa('Sofia')
+p2=Pessoa('Sofia')  #objetos
 
-print (p1.nome)
-print (p2.nome)
-
+print (p1.nome, p2.nome)
 
 ########2
 class Animal:
@@ -83,35 +81,51 @@ bicho2=Animal('cachorro')
 
 print (bicho1.tipo, bicho2.tipo)
 
-########3
-class Carro(object):
-    estado='novo'
+########3,4
+class Carro:
+     def __init__(self, cor, estado='novo'): #vem pré definido tds q tiverem 'estado'
+        self.estado=estado #(atributo) com variavel que vai ser definida
+        self.cor=cor
     
 fusca=Carro()
 fusca.estado='novo'
+fusca.cor='azul'
 
 ferrari=Carro()
 ferrari.estado='usado'
+ferrari.cor='vermelha'
 
-print (fusca.estado)
-print (ferrari.estado)
+print (fusca.estado, ferrari.estado)
 print(type(fusca))
 print(type(ferrari))
-'''
-##########4
-class Carro(object):
-    def __init__(self, estado, cor):
-        self.estado=estado
-        self.cor=cor
-    
-    
-fusca=Carro('novo', 'azul')
-#fusca.estado='novo'
-ferrari=Carro('usado', 'vermelho')
-#ferrari.estado='usado'
+print(fusca.cor, ferrari.cor)
 
-print ((type(fusca)),fusca.cor)
-print((type(ferrari)),ferrari.cor)
+##########5
+class Aluno:
+    def __init__(self, nome, nota):
+        self.nome=nome   #definiçao de atributo nome com a variavel vazia
+        self.nota=nota
+    
+nome=Aluno
+nota=Aluno
+nome=input('Digite seu nome: ')
+nota=input(float('Digite sua nota: ')) #coerçao
+aluno1=Aluno(nome, nota)
+
+print(aluno1.nome, aluno1.nota)
+
+########6
+'''
+class ContaBancaria:
+    def __init__ (self, saldo=0): #definiçao do metodo construtor
+        self.saldo=saldo
+        
+conta1=ContaBancaria(100)
+conta2=ContaBancaria(1000)
+
+print(conta1.saldo, conta2.saldo)
+
+#########7
                                                                                                   
 
 
@@ -119,6 +133,7 @@ print((type(ferrari)),ferrari.cor)
 
 
     
+
 
 
 
